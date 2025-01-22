@@ -1,0 +1,21 @@
+{
+    "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+    "apiVersion": 3,
+    "name": "acf/cards",
+    "title": "Cards",
+    "icon": "block-default",
+    "style": ["file:./styles.css"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "render.php",
+        "postTypes": [
+            "page"
+        ]
+    },
+	"supports": {
+		"anchor": true,
+		"align": ["wide", "full"],
+		"customClassName": true,
+		"renaming": false
+	}
+}
