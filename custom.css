@@ -43,19 +43,13 @@ img{
     border: 2px solid grey;
 }
 
-@media only screen and (min-width: 601px)and (max-width: 780px){
-    .columns{
-        grid-template-columns:1fr 1fr
-    }
-}
-
 @media only screen and (min-width: 1021px){
     .columns.has-3{
         grid-template-columns:1fr 1fr 1fr
     }
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (min-width: 601px) and (max-width: 1020px){
     .columns.has-3{
         grid-template-columns:1fr 1fr
     }
@@ -106,17 +100,28 @@ img{
 }
 
 .cards .main p{
-    font-size: 1.3rem;
     line-height: 1.5;
     font-weight: 300;
-
-    /* @media screen and (min-width: 20rem) and (max-width: 79.99999rem) {
-        font-size: fluid-size(1rem, 20rem, 1.375rem, 100rem, false);
-    } */
 }
 
-@media only screen and (max-width: 1020px){
+@media only screen and (min-width: 1021px){
     .cards .main p{ 
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 }
+
+@media screen and (min-width: 600px) and (max-width: 1020px) {
+    .cards .main p{ 
+      font-size: calc(32px + 16 * ((100vw - 600) / (1020 - 568)));
+    }
+}
+
+@media screen and (max-width: 599px){
+    .cards .main p{ 
+        font-size: 1rem;
+    }
+}
+
+/* @media screen and (min-width: 20rem) and (max-width: 79.99999rem) {
+    font-size: fluid-size(1rem, 20rem, 1.375rem, 100rem, false);
+} */
