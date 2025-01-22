@@ -11,11 +11,5 @@
         "postTypes": [
             "page"
         ]
-    },
-	"supports": {
-		"anchor": true,
-		"align": ["wide", "full"],
-		"customClassName": true,
-		"renaming": false
-	}
+    }
 }
